@@ -4,6 +4,7 @@ import { StatsCard } from "@/components/StatsCard";
 import { Activity, Radio, Users, Map, Cpu, Database, AlertCircle } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
+import { cn } from "@/lib/utils";
 
 export default function Dashboard() {
   const { data: stats, isLoading } = useDashboardStats();
